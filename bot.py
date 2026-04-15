@@ -45,4 +45,5 @@ async def rules(ctx):
     await ctx.send(embed=embed2)
     await ctx.send("||@everyone||")
 
-bot.run(os.environ["TOKEN"])
+TOKEN = os.getenv("TOKEN")
+bot.run(TOKEN)
